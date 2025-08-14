@@ -68,7 +68,7 @@
     .aside__nav a.active, .aside__nav a:hover { color: var(--text); border-color: var(--accent); background: color-mix(in oklab, var(--accent) 15%, transparent); }
 
     main { display: grid; gap: 18px; }
-    section { background: color-mix(in oklab, var(--panel) 96%, transparent); border: 1px solid var(--stroke); border-radius: var(--radius); box-shadow: var(--shadow); }
+    section { background: color-mix(in oklab, var(--panel) 96%, transparent); border: 1px solid var(--stroke); border-radius: var(--radius); box-shadow: var(--shadow); scroll-margin-top: 80px; }
     .section__head { display:flex; align-items:center; justify-content: space-between; gap: 12px; padding: 18px 20px; border-bottom: 1px solid var(--stroke); }
     .section__title { font-size: clamp(18px, 2.6vw, 22px); font-weight: 800; letter-spacing: .2px; }
     .section__body { padding: 18px 20px; }
@@ -102,6 +102,11 @@
     .lang { border: 1px solid var(--stroke); border-radius: 12px; padding: 12px; display:flex; align-items:center; justify-content: space-between; }
 
     .kv { display:grid; grid-template-columns: 140px 1fr; gap: 10px; }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px 12px; border: 1px solid var(--stroke); }
+    th { text-align: left; background: color-mix(in oklab, var(--panel) 92%, transparent); font-weight: 800; }
 
     footer { text-align:center; color: var(--muted); padding: 26px 0 60px; }
 
@@ -151,6 +156,9 @@
             <li><a href="#summary" class="navlink" data-i18n="nav.summary">Summary</a></li>
             <li><a href="#experience" class="navlink" data-i18n="nav.experience">Experience</a></li>
             <li><a href="#skills" class="navlink" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#certs" class="navlink" data-i18n="nav.certs">Certifications</a></li>
+            <li><a href="#activities" class="navlink" data-i18n="nav.activities">Activities & Training</a></li>
+            <li><a href="#military" class="navlink" data-i18n="nav.military">Military Service</a></li>
             <li><a href="#languages" class="navlink" data-i18n="nav.languages">Languages</a></li>
             <li><a href="#contact" class="navlink" data-i18n="nav.contact">Contact</a></li>
           </ul>
@@ -246,16 +254,38 @@
               </div>
             </div>
 
-            <!-- PRE‑FAURECIA -->
+            <!-- PRE‑FAURECIA POSITIONS -->
             <div class="item">
-              <div class="item__period" data-i18n="exp.p0.period">Pre‑2008</div>
+              <div class="item__period" data-i18n="exp.p0b.period">2004.4 – 2008.4</div>
               <div>
                 <div class="item__header">
-                  <div class="company" data-i18n="exp.p0.company">Pre‑Faurecia Experience</div>
-                  <div class="role2" data-i18n="exp.p0.role">Details to be added</div>
+                  <div class="company" data-i18n="exp.p0b.company">JMP (Korea)</div>
+                  <div class="role2" data-i18n="exp.p0b.role">Injection Mold Development · Automotive (HVAC, duct)</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p0b.t1">Injection Mold</span>
+                  <span class="tag" data-i18n="exp.p0b.t2">Automotive Parts</span>
+                  <span class="tag" data-i18n="exp.p0b.t3">HVAC/Duct</span>
                 </div>
                 <ul class="bullets">
-                  <li data-i18n="exp.p0.b1">첨부된 이전 경력 자료를 반영한 상세 경력은 업데이트 예정입니다.</li>
+                  <li data-i18n="exp.p0b.b1">자동차 부품 사출금형 개발(HVAC, 덕트) 담당.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__period" data-i18n="exp.p0a.period">2001.9 – 2003.3</div>
+              <div>
+                <div class="item__header">
+                  <div class="company" data-i18n="exp.p0a.company">Lost Wax (Korea)</div>
+                  <div class="role2" data-i18n="exp.p0a.role">Product & Casting Mold Development (turbine, blade)</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p0a.t1">Investment Casting</span>
+                  <span class="tag" data-i18n="exp.p0a.t2">Turbine/Blade</span>
+                </div>
+                <ul class="bullets">
+                  <li data-i18n="exp.p0a.b1">로스트왁스 공정 기반 주조금형 및 제품 개발(터빈/블레이드).</li>
                 </ul>
               </div>
             </div>
@@ -288,6 +318,73 @@
             <div class="skill" data-cat="project"><strong data-i18n="skills.s7.t">Supplier/OEM Interface</strong><div class="muted" data-i18n="skills.s7.d">Global communication</div></div>
             <div class="skill" data-cat="quality"><strong data-i18n="skills.s8.t">Quality Systems</strong><div class="muted" data-i18n="skills.s8.d">APQP/PPAP (project‑level)</div></div>
           </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certs">
+        <div class="section__head">
+          <div class="section__title" data-i18n="cert.title">Certifications</div>
+          <div class="muted" data-i18n="cert.subtitle">Core technical qualifications</div>
+        </div>
+        <div class="section__body">
+          <ul class="bullets">
+            <li data-i18n="cert.i1">Precision measurer</li>
+            <li data-i18n="cert.i2">CNC Lathe & Milling</li>
+            <li data-i18n="cert.i3">CAD/CAM</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ACTIVITIES & TRAINING -->
+      <section id="activities">
+        <div class="section__head">
+          <div class="section__title" data-i18n="act.title">Activities & Training</div>
+          <div class="muted" data-i18n="act.subtitle">Manufacturing training and placements</div>
+        </div>
+        <div class="section__body">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="act.th.period">Period</th>
+                <th data-i18n="act.th.category">Category</th>
+                <th data-i18n="act.th.org">Organization</th>
+                <th data-i18n="act.th.activity">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1997.2 – 1999.3</td>
+                <td>Manufacturing training</td>
+                <td>Vocational training center · Korea Chamber of Commerce and Industry</td>
+                <td>CAD/CAM & manufacturing training</td>
+              </tr>
+              <tr>
+                <td>1999.3 – 1999.12</td>
+                <td>Manufacturing training in Japan</td>
+                <td>Korea Chamber of Commerce and Industry</td>
+                <td>Placement at a precision measuring device manufacturer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- MILITARY SERVICE -->
+      <section id="military">
+        <div class="section__head">
+          <div class="section__title" data-i18n="mil.title">Military Service</div>
+          <div class="muted" data-i18n="mil.subtitle">Conscription details</div>
+        </div>
+        <div class="section__body kv">
+          <div class="muted" data-i18n="mil.branch.label">Branch</div>
+          <div data-i18n="mil.branch.value">Army</div>
+          <div class="muted" data-i18n="mil.arm.label">Specialty</div>
+          <div data-i18n="mil.arm.value">Artillery</div>
+          <div class="muted" data-i18n="mil.rank.label">Rank</div>
+          <div data-i18n="mil.rank.value">Sergeant</div>
+          <div class="muted" data-i18n="mil.period.label">Period</div>
+          <div data-i18n="mil.period.value">1994.11 – 1997.1</div>
         </div>
       </section>
 
@@ -354,7 +451,7 @@
         'header.name': '오영환 (Oh Young‑Hwan)',
         'header.role': 'Process Chief Engineer · Hydrogen Storage Systems · Yongin/Ansan, KR',
         'ui.theme': '🌓 테마', 'ui.pdf': '🖨️ PDF',
-        'nav.summary': '요약', 'nav.experience': '경력', 'nav.skills': '기술', 'nav.languages': '언어', 'nav.contact': '연락처',
+        'nav.summary': '요약', 'nav.experience': '경력', 'nav.skills': '기술', 'nav.certs': '자격증', 'nav.activities': '주요 활동·교육', 'nav.military': '병역', 'nav.languages': '언어', 'nav.contact': '연락처',
         'summary.title': '프로페셔널 요약', 'summary.tag': '배기부품 · Type‑IV 수소용기 · 글로벌 프로젝트',
         'summary.body': '자동차 배기부품 다수 개발과 Type‑IV 수소용기(저장시스템 포함) 개발 경력을 보유. 현대·기아 및 르노삼성 배기계 프로그램을 설계에서 양산까지 리딩했고, 국내 최초 배기열회수장치(EHRS) Gen1/Gen2를 본사와 협업해 개발. 현대 엑시언트(QZ) 수소 저장시스템을 SOP까지 완료했으며, 현재 MEGC용 XL Type‑4 수소탱크(약 440 L) 개발을 진행 중.',
         'summary.m1v': '2008 → 현재', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': '다수 OEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': 'Hydrogen', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
@@ -362,17 +459,21 @@
         'exp.p3.period': '2021 – 현재', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': 'Process Chief Engineer · Hydrogen BU', 'exp.p3.t1': '수소 저장시스템', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': '현대 엑시언트(QZ)용 수소탱크 및 저장시스템 개발을 <strong>SOP</strong> 단계까지 완료.', 'exp.p3.b2': 'MEGC(Multiple Element Gas Container) 적용 <strong>XL Type‑4 탱크(약 440 L)</strong> 개발 리딩.', 'exp.p3.b3': '생산기술 관점에서 품질·공정 안정화, 고객사·본사·공장 간 글로벌 커뮤니케이션 총괄.',
         'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': '신기술 사업부 · 팀장', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': 'R&D 협업', 'exp.p2.b1': '본사와의 협업으로 국내 최초 <strong>배기열회수장치(EHRS) Gen1/Gen2</strong> 개발 및 상용화 주도.', 'exp.p2.b2': '연비 향상·배출가스 저감 목표 달성을 위한 시스템 최적화, 양산 대응.',
         'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': '설계 엔지니어 → PDL', 'exp.p1.t1': '배기계', 'exp.p1.t2': '양산 런치', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': '주요 OEM 배기계 개발 프로그램을 설계·검증·양산 Launch까지 성공적으로 리딩.', 'exp.p1.b2': '프로젝트 일정·원가·품질 통합 관리 및 Cross‑functional 협업 운영.',
-        'exp.p0.period': 'Pre‑2008', 'exp.p0.company': '포레시아 이전 경력', 'exp.p0.role': '세부사항 업데이트 예정', 'exp.p0.b1': '첨부된 이전 경력 자료를 반영해 상세 경력을 업데이트할 예정입니다.',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': '자동차 사출금형 개발(HVAC, 덕트)', 'exp.p0b.t1': '사출금형', 'exp.p0b.t2': '자동차부품', 'exp.p0b.t3': 'HVAC/덕트', 'exp.p0b.b1': '자동차 부품 사출금형 개발(HVAC, 덕트) 담당.',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': '제품 및 주조금형 개발(터빈/블레이드)', 'exp.p0a.t1': '인베스트먼트 주조', 'exp.p0a.t2': '터빈/블레이드', 'exp.p0a.b1': '로스트왁스 공정 기반 주조금형 및 제품 개발(터빈/블레이드).',
         'skills.title': '기술', 'skills.subtitle': '카테고리별 필터', 'skills.filter.all': '전체', 'skills.filter.hydrogen': '수소', 'skills.filter.exhaust': '배기', 'skills.filter.project': '프로젝트', 'skills.filter.quality': '품질',
         'skills.s1.t': 'Type‑IV 탱크 설계', 'skills.s1.d': '라이너·랩, 인터페이스, 검증', 'skills.s2.t': '수소 저장시스템', 'skills.s2.d': 'BOP, 안전', 'skills.s3.t': 'MEGC 통합', 'skills.s3.d': '패키징, 규격준수', 'skills.s4.t': '배기부품 개발', 'skills.s4.d': '설계→양산', 'skills.s5.t': 'PDL 리더십', 'skills.s5.d': '일정·원가·품질', 'skills.s6.t': '검증 & SOP', 'skills.s6.d': 'DV/PV, SOP readiness', 'skills.s7.t': '공급사/OEM 인터페이스', 'skills.s7.d': '글로벌 커뮤니케이션', 'skills.s8.t': '품질 시스템', 'skills.s8.d': 'APQP/PPAP (프로젝트 레벨)',
-        'lang.title': '언어', 'lang.subtitle': '다국어 커뮤니케이션', 'lang.en': '영어 (English)', 'lang.en.level': '상급 / Fluent', 'lang.ja': '일본어 (日本語)', 'lang.jา.level': '상급 / Fluent', 'lang.zh': '중국어 (中文)', 'lang.zh.level': '중급 / Intermediate',
+        'cert.title': '자격증', 'cert.subtitle': '핵심 기술 자격', 'cert.i1': '정밀측정', 'cert.i2': 'CNC 선반 & 밀링', 'cert.i3': 'CAD/CAM',
+        'act.title': '주요 활동 및 교육', 'act.subtitle': '제조 교육 및 파견', 'act.th.period': '기간', 'act.th.category': '구분', 'act.th.org': '기관', 'act.th.activity': '활동',
+        'mil.title': '병역', 'mil.subtitle': '의무복무 내역', 'mil.branch.label': '군별', 'mil.branch.value': '육군', 'mil.arm.label': '병과', 'mil.arm.value': '포병', 'mil.rank.label': '계급', 'mil.rank.value': '병장', 'mil.period.label': '기간', 'mil.period.value': '1994.11 – 1997.1',
+        'lang.title': '언어', 'lang.subtitle': '다국어 커뮤니케이션', 'lang.en': '영어 (English)', 'lang.en.level': '상급 / Fluent', 'lang.ja': '일본어 (日本語)', 'lang.ja.level': '상급 / Fluent', 'lang.zh': '중국어 (中文)', 'lang.zh.level': '중급 / Intermediate',
         'contact.title': '연락처', 'contact.subtitle': '간단하고 직접적으로', 'contact.email.label': '이메일', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': '지역', 'contact.loc.value': '용인 · 안산, 대한민국', 'contact.port.label': '포트폴리오', 'contact.port.value': 'Career‑Description (GitHub Pages)'
       },
       en: {
         'header.name': 'Oh Young‑Hwan',
         'header.role': 'Process Chief Engineer · Hydrogen Storage Systems · Yongin/Ansan, KR',
         'ui.theme': '🌓 Theme', 'ui.pdf': '🖨️ PDF',
-        'nav.summary': 'Summary', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.languages': 'Languages', 'nav.contact': 'Contact',
+        'nav.summary': 'Summary', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.certs': 'Certifications', 'nav.activities': 'Activities & Training', 'nav.military': 'Military Service', 'nav.languages': 'Languages', 'nav.contact': 'Contact',
         'summary.title': 'Professional Summary', 'summary.tag': 'Exhaust components · Type‑IV H2 cylinders · Global projects',
         'summary.body': 'Experience across multiple automotive exhaust component programs and Type‑IV hydrogen cylinder/storage system development. Led Hyundai·Kia and Renault Samsung exhaust programs from design to mass‑production, co‑developed Korea’s first EHRS Gen1/Gen2 with HQ, and completed the Hyundai Xcient (QZ) hydrogen storage system to SOP. Currently working on the MEGC XL Type‑4 hydrogen tank (~440 L).',
         'summary.m1v': '2008 → Present', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': 'Multi‑OEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': 'Hydrogen', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
@@ -380,9 +481,13 @@
         'exp.p3.period': '2021 – Present', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': 'Process Chief Engineer · Hydrogen BU', 'exp.p3.t1': 'Hydrogen Storage System', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': 'Completed Hyundai Xcient (QZ) hydrogen tank & storage system to <strong>SOP</strong>.', 'exp.p3.b2': 'Leading MEGC application with <strong>XL Type‑4 tank (~440 L)</strong>.', 'exp.p3.b3': 'Drove process stability and cross‑site communication across customer, HQ and plant.',
         'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': 'New Technology Division · Team Manager', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': 'R&D Collaboration', 'exp.p2.b1': 'Co‑developed and industrialized Korea’s first <strong>EHRS Gen1/Gen2</strong> with HQ.', 'exp.p2.b2': 'Optimized system for fuel‑economy gains and emission reduction; managed launch readiness.',
         'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': 'Design Engineer → Project Development Leader (PDL)', 'exp.p1.t1': 'Exhaust System', 'exp.p1.t2': 'Mass Production Launch', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': 'Led exhaust programs from design and validation to mass‑production launch for key OEMs.', 'exp.p1.b2': 'Managed schedule, cost and quality with cross‑functional collaboration.',
-        'exp.p0.period': 'Pre‑2008', 'exp.p0.company': 'Pre‑Faurecia Experience', 'exp.p0.role': 'Details to be added', 'exp.p0.b1': 'Detailed pre‑Faurecia experience to be updated from the attached material.',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': 'Injection Mold Development · Automotive (HVAC, duct)', 'exp.p0b.t1': 'Injection Mold', 'exp.p0b.t2': 'Automotive Parts', 'exp.p0b.t3': 'HVAC/Duct', 'exp.p0b.b1': 'Responsible for injection mold development for automotive HVAC/duct parts.',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': 'Product & Casting Mold Development (turbine, blade)', 'exp.p0a.t1': 'Investment Casting', 'exp.p0a.t2': 'Turbine/Blade', 'exp.p0a.b1': 'Developed casting molds and products for turbine/blade using lost‑wax process.',
         'skills.title': 'Skills', 'skills.subtitle': 'Filter by category', 'skills.filter.all': 'All', 'skills.filter.hydrogen': 'Hydrogen', 'skills.filter.exhaust': 'Exhaust', 'skills.filter.project': 'Project', 'skills.filter.quality': 'Quality',
         'skills.s1.t': 'Type‑IV Tank Design', 'skills.s1.d': 'Liner/wrap, interfaces, validation', 'skills.s2.t': 'Hydrogen Storage System', 'skills.s2.d': 'Balance of plant, safety', 'skills.s3.t': 'MEGC Integration', 'skills.s3.d': 'Package, compliance', 'skills.s4.t': 'Exhaust Components Development', 'skills.s4.d': 'Design→Launch', 'skills.s5.t': 'Project Leadership (PDL)', 'skills.s5.d': 'Schedule·Cost·Quality', 'skills.s6.t': 'Validation & SOP', 'skills.s6.d': 'DV/PV, SOP readiness', 'skills.s7.t': 'Supplier/OEM Interface', 'skills.s7.d': 'Global communication', 'skills.s8.t': 'Quality Systems', 'skills.s8.d': 'APQP/PPAP (project‑level)',
+        'cert.title': 'Certifications', 'cert.subtitle': 'Core technical qualifications', 'cert.i1': 'Precision measurer', 'cert.i2': 'CNC Lathe & Milling', 'cert.i3': 'CAD/CAM',
+        'act.title': 'Activities & Training', 'act.subtitle': 'Manufacturing training and placements', 'act.th.period': 'Period', 'act.th.category': 'Category', 'act.th.org': 'Organization', 'act.th.activity': 'Activity',
+        'mil.title': 'Military Service', 'mil.subtitle': 'Conscription details', 'mil.branch.label': 'Branch', 'mil.branch.value': 'Army', 'mil.arm.label': 'Specialty', 'mil.arm.value': 'Artillery', 'mil.rank.label': 'Rank', 'mil.rank.value': 'Sergeant', 'mil.period.label': 'Period', 'mil.period.value': '1994.11 – 1997.1',
         'lang.title': 'Languages', 'lang.subtitle': 'Multilingual communication', 'lang.en': 'English', 'lang.en.level': 'Fluent', 'lang.ja': 'Japanese', 'lang.ja.level': 'Fluent', 'lang.zh': 'Chinese', 'lang.zh.level': 'Intermediate',
         'contact.title': 'Contact', 'contact.subtitle': 'Direct & simple', 'contact.email.label': 'Email', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': 'Location', 'contact.loc.value': 'Yongin · Ansan, Republic of Korea', 'contact.port.label': 'Portfolio', 'contact.port.value': 'Career‑Description (GitHub Pages)'
       },
@@ -390,7 +495,7 @@
         'header.name': '呉 永煥 (Oh Young‑Hwan)',
         'header.role': 'プロセス主席エンジニア · 水素貯蔵システム · 龍仁/安山, 韓国',
         'ui.theme': '🌓 テーマ', 'ui.pdf': '🖨️ PDF',
-        'nav.summary': 'サマリー', 'nav.experience': '職務経歴', 'nav.skills': 'スキル', 'nav.languages': '言語', 'nav.contact': '連絡先',
+        'nav.summary': 'サマリー', 'nav.experience': '職務経歴', 'nav.skills': 'スキル', 'nav.certs': '資格', 'nav.activities': '主な活動・訓練', 'nav.military': '兵役', 'nav.languages': '言語', 'nav.contact': '連絡先',
         'summary.title': 'プロフェッショナルサマリー', 'summary.tag': '排気部品 · Type‑IV水素ボトル · グローバルPJ',
         'summary.body': '自動車の排気部品およびType‑IV水素ボトル（貯蔵システム含む）の開発経験を保有。現代・起亜、ルノーサムスン向け排気系を設計から量産まで主導し、本社と協業して韓国内初のEHRS Gen1/Gen2を実用化。現代Xcient(QZ)の水素貯蔵システムをSOPまで完了。現在はMEGC向けXL Type‑4水素タンク（約440 L）を担当。',
         'summary.m1v': '2008 → 現在', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': 'マルチOEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': '水素', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
@@ -398,9 +503,13 @@
         'exp.p3.period': '2021 – 現在', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': 'プロセス主席エンジニア · 水素事業部', 'exp.p3.t1': '水素貯蔵システム', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': '現代Xcient(QZ)向け水素タンク及び貯蔵システムを<strong>SOP</strong>まで完了。', 'exp.p3.b2': 'MEGC適用の<strong>XL Type‑4タンク（約440 L）</strong>をリード。', 'exp.p3.b3': '品質・工程安定化と拠点間コミュニケーションを統括。',
         'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': '新技術事業部 · チーム長', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': 'R&D協業', 'exp.p2.b1': '本社と協業し、韓国内初の<strong>EHRS Gen1/Gen2</strong>を開発・量産化。', 'exp.p2.b2': '燃費向上と排出ガス低減のための最適化、量産対応。',
         'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': '設計エンジニア → PDL', 'exp.p1.t1': '排気系', 'exp.p1.t2': '量産立上げ', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': '主要OEMの排気系を設計・検証から量産立上げまでリード。', 'exp.p1.b2': 'スケジュール・コスト・品質を統合管理。',
-        'exp.p0.period': '2008以前', 'exp.p0.company': 'Faurecia以前の経歴', 'exp.p0.role': '詳細は追って追加', 'exp.p0.b1': '添付の資料に基づく詳細は後日更新します。',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': '自動車用射出金型開発（HVAC/ダクト）', 'exp.p0b.t1': '射出金型', 'exp.p0b.t2': '自動車部品', 'exp.p0b.t3': 'HVAC/ダクト', 'exp.p0b.b1': 'HVAC/ダクト向け射出金型の開発を担当。',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': '製品・鋳造金型開発（タービン/ブレード）', 'exp.p0a.t1': '精密鋳造', 'exp.p0a.t2': 'タービン/ブレード', 'exp.p0a.b1': 'ロストワックス工程による鋳造金型と製品を開発。',
         'skills.title': 'スキル', 'skills.subtitle': 'カテゴリでフィルタ', 'skills.filter.all': 'すべて', 'skills.filter.hydrogen': '水素', 'skills.filter.exhaust': '排気', 'skills.filter.project': 'プロジェクト', 'skills.filter.quality': '品質',
         'skills.s1.t': 'Type‑IVタンク設計', 'skills.s1.d': 'ライナー・ラップ、インターフェース、検証', 'skills.s2.t': '水素貯蔵システム', 'skills.s2.d': 'BOP、安全', 'skills.s3.t': 'MEGC統合', 'skills.s3.d': 'パッケージ、法規', 'skills.s4.t': '排気部品開発', 'skills.s4.d': '設計→量産', 'skills.s5.t': 'PDLリーダーシップ', 'skills.s5.d': 'スケジュール・コスト・品質', 'skills.s6.t': '検証 & SOP', 'skills.s6.d': 'DV/PV, SOP readiness', 'skills.s7.t': 'サプライヤ/OEM連携', 'skills.s7.d': 'グローバルコミュニケーション', 'skills.s8.t': '品質システム', 'skills.s8.d': 'APQP/PPAP（プロジェクト）',
+        'cert.title': '資格', 'cert.subtitle': 'コア技術資格', 'cert.i1': '精密測定', 'cert.i2': 'CNC旋盤・フライス', 'cert.i3': 'CAD/CAM',
+        'act.title': '主な活動・訓練', 'act.subtitle': '製造訓練と派遣', 'act.th.period': '期間', 'act.th.category': '区分', 'act.th.org': '機関', 'act.th.activity': '活動',
+        'mil.title': '兵役', 'mil.subtitle': '徴兵詳細', 'mil.branch.label': '軍種', 'mil.branch.value': '陸軍', 'mil.arm.label': '兵科', 'mil.arm.value': '砲兵', 'mil.rank.label': '階級', 'mil.rank.value': '軍曹', 'mil.period.label': '期間', 'mil.period.value': '1994.11 – 1997.1',
         'lang.title': '言語', 'lang.subtitle': '多言語コミュニケーション', 'lang.en': '英語', 'lang.en.level': '上級 / Fluent', 'lang.ja': '日本語', 'lang.ja.level': '上級 / Fluent', 'lang.zh': '中国語', 'lang.zh.level': '中級 / Intermediate',
         'contact.title': '連絡先', 'contact.subtitle': 'シンプルに', 'contact.email.label': 'Eメール', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': '所在地', 'contact.loc.value': '龍仁 · 安山, 大韓民国', 'contact.port.label': 'ポートフォリオ', 'contact.port.value': 'Career‑Description (GitHub Pages)'
       },
@@ -408,7 +517,7 @@
         'header.name': '吴永煥 (Oh Young‑Hwan)',
         'header.role': '工艺首席工程师 · 氢储存系统 · 龙仁/安山, 韩国',
         'ui.theme': '🌓 主题', 'ui.pdf': '🖨️ PDF',
-        'nav.summary': '概要', 'nav.experience': '经历', 'nav.skills': '技能', 'nav.languages': '语言', 'nav.contact': '联系',
+        'nav.summary': '概要', 'nav.experience': '经历', 'nav.skills': '技能', 'nav.certs': '资格证书', 'nav.activities': '主要活动与培训', 'nav.military': '兵役', 'nav.languages': '语言', 'nav.contact': '联系',
         'summary.title': '职业概要', 'summary.tag': '排气部件 · Type‑IV 氢瓶 · 全球项目',
         'summary.body': '拥有多项汽车排气部件及Type‑IV氢瓶（含储存系统）开发经验。主导现代·起亚、雷诺三星排气项目从设计到量产，与总部协作完成韩国首个EHRS Gen1/Gen2。完成现代Xcient(QZ)氢储存系统至SOP阶段。目前负责MEGC用XL Type‑4氢气瓶（约440 L）。',
         'summary.m1v': '2008 → 至今', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': '多家OEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': '氢能', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
@@ -416,9 +525,586 @@
         'exp.p3.period': '2021 – 至今', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': '工艺首席工程师 · 氢能事业部', 'exp.p3.t1': '氢储存系统', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': '完成现代Xcient(QZ)氢气瓶及储存系统至<strong>SOP</strong>。', 'exp.p3.b2': '主导<strong>XL Type‑4（约440 L）</strong>的MEGC应用。', 'exp.p3.b3': '推进工艺稳定，并协调客户/总部/工厂。',
         'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': '新技术事业部 · 组长', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': '研发协作', 'exp.p2.b1': '与总部协作，开发并量产韩国首个<strong>EHRS Gen1/Gen2</strong>。', 'exp.p2.b2': '为提升燃油经济性与降低排放进行优化，并支援量产导入。',
         'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': '设计工程师 → PDL', 'exp.p1.t1': '排气系统', 'exp.p1.t2': '量产导入', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': '负责关键OEM排气系统，从设计与验证到量产导入。', 'exp.p1.b2': '统筹进度、成本与质量。',
-        'exp.p0.period': '2008年前', 'exp.p0.company': 'Faurecia之前的经历', 'exp.p0.role': '细节待补充', 'exp.p0.b1': '将基于附件资料补充详细经历。',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': '汽车注塑模具开发（HVAC/风道）', 'exp.p0b.t1': '注塑模具', 'exp.p0b.t2': '汽车零部件', 'exp.p0b.t3': 'HVAC/风道', 'exp.p0b.b1': '负责HVAC/风道零部件的注塑模具开发。',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': '产品与铸造模具开发（涡轮/叶片）', 'exp.p0a.t1': '精密铸造', 'exp.p0a.t2': '涡轮/叶片', 'exp.p0a.b1': '基于失蜡工艺开发铸造模具与产品（涡轮/叶片）。',
         'skills.title': '技能', 'skills.subtitle': '按类别筛选', 'skills.filter.all': '全部', 'skills.filter.hydrogen': '氢能', 'skills.filter.exhaust': '排气', 'skills.filter.project': '项目', 'skills.filter.quality': '质量',
         'skills.s1.t': 'Type‑IV 氢瓶设计', 'skills.s1.d': '内衬/缠绕、接口、验证', 'skills.s2.t': '氢储存系统', 'skills.s2.d': 'BOP、安全', 'skills.s3.t': 'MEGC 集成', 'skills.s3.d': '布置、合规', 'skills.s4.t': '排气部件开发', 'skills.s4.d': '设计→量产', 'skills.s5.t': '项目领导力 (PDL)', 'skills.s5.d': '进度·成本·质量', 'skills.s6.t': '验证与SOP', 'skills.s6.d': 'DV/PV, SOP就绪', 'skills.s7.t': '供应商/OEM接口', 'skills.s7.d': '全球沟通', 'skills.s8.t': '质量体系', 'skills.s8.d': 'APQP/PPAP（项目级）',
+        'cert.title': '资格证书', 'cert.subtitle': '核心技术资格', 'cert.i1': '精密测量', 'cert.i2': 'CNC 车削与铣削', 'cert.i3': 'CAD/CAM',
+        'act.title': '主要活动与培训', 'act.subtitle': '制造培训与派遣', 'act.th.period': '期间', 'act.th.category': '类别', 'act.th.org': '机构', 'act.th.activity': '内容',
+        'mil.title': '兵役', 'mil.subtitle': '服役详情', 'mil.branch.label': '军别', 'mil.branch.value': '陆军', 'mil.arm.label': '兵种', 'mil.arm.value': '炮兵', 'mil.rank.label': '军衔', 'mil.rank.value': '中士', 'mil.period.label': '期间', 'mil.period.value': '1994.11 – 1997.1',
+        'lang.title': '语言', 'lang.subtitle': '多语言沟通', 'lang.en': '英语', 'lang.en.level': '流利', 'lang.ja': '日语', 'lang.ja.level': '流利', 'lang.zh': '中文', 'lang.zh.level': '中级',
+        'contact.title': '联系', 'contact.subtitle': '直接而简洁', 'contact.email.label': '邮箱', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': '位置', 'contact.loc.value': '韩国 龙仁 · 安山', 'contact.port.label': '作品集', 'contact.port.value': 'Career‑Description (GitHub Pages)'
+      }
+    };
+
+    const langSelect = document.getElementById('langSelect');
+    function applyI18n(lang){
+      const dict = i18n[lang] || i18n.ko;
+      document.documentElement.setAttribute('lang', lang);
+      Array.from(document.querySelectorAll('[data-i18n]')).forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if(dict[key] !== undefined){
+          const v = String(dict[key]);
+          if (v.includes('<strong') || v.includes('<br') || v.includes('<em')) { el.innerHTML = v; }
+          else { el.textContent = v; }
+        }
+      });
+      localStorage.setItem('lang', lang);
+    }
+    langSelect.value = localStorage.getItem('lang') || 'ko';
+    applyI18n(langSelect.value);
+    langSelect.addEventListener('change', () => applyI18n(langSelect.value));
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Oh Young-Hwan",
+    "jobTitle": "Process Chief Engineer",
+    "affiliation": {"@type": "Organization", "name": "Faurecia Korea (FORVIA)"},
+    "knowsLanguage": ["English", "Japanese", "Chinese", "Korean"],
+    "address": {"@type": "PostalAddress", "addressCountry": "KR", "addressLocality": "Yongin/Ansan"},
+    "email": "mailto:sugoii77@gmail.com",
+    "url": "https://sugoii77-rgb.github.io/Career-Description/"
+  }
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oh Young‑Hwan | Professional Experience</title>
+  <meta name="description" content="Resume of Oh Young‑Hwan: automotive exhaust components, Type‑IV hydrogen cylinder development (MEGC XL), Process Chief Engineer." />
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Oh Young‑Hwan | Professional Experience" />
+  <meta property="og:description" content="Automotive exhaust components and Type‑IV hydrogen cylinder development. Process Chief Engineer at FORVIA (Faurecia) Korea." />
+  <meta property="og:type" content="profile" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --panel: #0f1117;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #0ea5e9;
+      --accent-2: #22d3ee;
+      --stroke: #232633;
+      --ring: 0 0 0 3px color-mix(in oklab, var(--accent) 30%, transparent);
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --radius: 16px;
+      color-scheme: dark light;
+    }
+    html.light {
+      --bg: #ffffff;
+      --panel: #ffffff;
+      --text: #0b1220;
+      --muted: #334155;
+      --accent: #0ea5e9;
+      --accent-2: #0891b2;
+      --stroke: #e5e7eb;
+      --shadow: 0 10px 30px rgba(2,6,23,0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 500 15px/1.65 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(80vw 80vh at 10% -10%, rgba(14,165,233,.12), transparent),
+                  radial-gradient(60vw 60vh at 120% 20%, rgba(34,211,238,.10), transparent), var(--bg);
+      color: var(--text);
+    }
+
+    .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 60; background: linear-gradient(90deg, var(--accent), var(--accent-2)); box-shadow: 0 0 20px color-mix(in oklab, var(--accent) 60%, transparent); }
+
+    header { position: sticky; top: 0; z-index: 50; background: color-mix(in oklab, var(--panel) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--stroke); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 12px 16px; }
+    .row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px; }
+    .title { display: flex; gap: 14px; align-items: center; }
+    .avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: grid; place-items: center; color: white; font-weight: 800; box-shadow: var(--shadow); }
+    .name { font-weight: 800; font-size: clamp(18px, 3.5vw, 22px); letter-spacing: .2px; }
+    .role { color: var(--muted); font-size: 13px; }
+
+    .controls { display: flex; align-items: center; gap: 8px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--stroke); background: color-mix(in oklab, var(--panel) 90%, transparent); color: var(--text); text-decoration: none; font-weight: 700; }
+    .btn:hover { border-color: var(--accent); box-shadow: var(--ring); }
+    select { padding: 8px 10px; border-radius: 10px; background: color-mix(in oklab, var(--panel) 90%, transparent); color: var(--text); border: 1px solid var(--stroke); }
+
+    .layout { max-width: 1200px; margin: 18px auto 64px; display: grid; grid-template-columns: 280px 1fr; gap: 18px; padding: 0 16px; }
+    aside { position: sticky; top: 72px; align-self: start; background: color-mix(in oklab, var(--panel) 96%, transparent); border: 1px solid var(--stroke); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .aside__inner { padding: 16px; display: grid; gap: 12px; }
+    .aside__nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .aside__nav a { text-decoration: none; color: var(--muted); padding: 8px 10px; border-radius: 10px; border: 1px solid var(--stroke); display: block; font-weight: 600; }
+    .aside__nav a.active, .aside__nav a:hover { color: var(--text); border-color: var(--accent); background: color-mix(in oklab, var(--accent) 15%, transparent); }
+
+    main { display: grid; gap: 18px; }
+    section { background: color-mix(in oklab, var(--panel) 96%, transparent); border: 1px solid var(--stroke); border-radius: var(--radius); box-shadow: var(--shadow); scroll-margin-top: 80px; }
+    .section__head { display:flex; align-items:center; justify-content: space-between; gap: 12px; padding: 18px 20px; border-bottom: 1px solid var(--stroke); }
+    .section__title { font-size: clamp(18px, 2.6vw, 22px); font-weight: 800; letter-spacing: .2px; }
+    .section__body { padding: 18px 20px; }
+
+    .hero { display:grid; grid-template-columns: 1.05fr .95fr; gap: 18px; }
+    .summary { font-size: clamp(15px, 2.2vw, 16px); color: var(--muted); }
+    .metrics { display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+    .metric { border: 1px solid var(--stroke); border-radius: 14px; padding: 12px; background: radial-gradient(80% 120% at 30% -20%, color-mix(in oklab, var(--accent) 8%, transparent), transparent); }
+    .metric strong { display:block; font-size: 20px; }
+    .muted { color: var(--muted); }
+
+    .timeline { display: grid; gap: 16px; position: relative; }
+    .timeline::before { content: ""; position: absolute; left: 12px; top: 0; bottom: 0; width: 2px; background: var(--stroke); }
+    .item { position: relative; margin-left: 18px; border: 1px solid var(--stroke); border-radius: 14px; padding: 12px 14px; background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 98%, transparent), transparent); }
+    .item::before { content: ""; position: absolute; left: -8px; top: 18px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 40%, transparent); }
+    .item__period { font-weight: 800; color: var(--muted); margin-bottom: 6px; }
+    .item__header { display:flex; flex-wrap: wrap; align-items: baseline; gap: 10px; }
+    .company { font-weight: 800; }
+    .role2 { color: var(--muted); }
+    .tags { display:flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+    .tag { font-size: 12px; border:1px solid var(--stroke); padding: 4px 8px; border-radius: 999px; color: var(--muted); }
+    .bullets { margin: 8px 0 0 18px; }
+
+    .skillbar { display:flex; gap: 8px; flex-wrap: wrap; }
+    .chip { padding: 7px 10px; border-radius: 999px; border:1px solid var(--stroke); cursor:pointer; user-select: none; }
+    .chip.active { background: color-mix(in oklab, var(--accent) 15%, transparent); border-color: var(--accent); }
+    .skillgrid { display:grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+    .skill { border: 1px solid var(--stroke); border-radius: 12px; padding: 12px; }
+
+    .langlist { display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+    .lang { border: 1px solid var(--stroke); border-radius: 12px; padding: 12px; display:flex; align-items:center; justify-content: space-between; }
+
+    .kv { display:grid; grid-template-columns: 140px 1fr; gap: 10px; }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px 12px; border: 1px solid var(--stroke); }
+    th { text-align: left; background: color-mix(in oklab, var(--panel) 92%, transparent); font-weight: 800; }
+
+    footer { text-align:center; color: var(--muted); padding: 26px 0 60px; }
+
+    @media (max-width: 1000px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .hero { grid-template-columns: 1fr; }
+      .skillgrid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .langlist { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .kv { grid-template-columns: 1fr; }
+    }
+
+    @media print { header, .progress, .aside__nav, .controls, footer { display: none !important; } body { background: #fff; } section { border: none; box-shadow: none; } .item { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <div class="avatar" aria-hidden="true">OH</div>
+          <div>
+            <div class="name" data-i18n="header.name">오영환 (Oh Young‑Hwan)</div>
+            <div class="role" data-i18n="header.role">Process Chief Engineer · Hydrogen Storage Systems · Yongin/Ansan, KR</div>
+          </div>
+        </div>
+        <div class="controls">
+          <select id="langSelect" aria-label="Language">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+          </select>
+          <a class="btn" id="themeToggle" href="#" aria-label="Toggle theme" data-i18n="ui.theme">🌓 Theme</a>
+          <a class="btn" href="#" onclick="window.print()" aria-label="Download PDF" data-i18n="ui.pdf">🖨️ PDF</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="aside__inner">
+        <nav class="aside__nav" aria-label="Section navigation">
+          <ul>
+            <li><a href="#summary" class="navlink" data-i18n="nav.summary">Summary</a></li>
+            <li><a href="#experience" class="navlink" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#skills" class="navlink" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#certs" class="navlink" data-i18n="nav.certs">Certifications</a></li>
+            <li><a href="#activities" class="navlink" data-i18n="nav.activities">Activities & Training</a></li>
+            <li><a href="#military" class="navlink" data-i18n="nav.military">Military Service</a></li>
+            <li><a href="#languages" class="navlink" data-i18n="nav.languages">Languages</a></li>
+            <li><a href="#contact" class="navlink" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <!-- SUMMARY -->
+      <section id="summary">
+        <div class="section__head">
+          <div class="section__title" data-i18n="summary.title">Professional Summary</div>
+          <div class="muted" data-i18n="summary.tag">Exhaust components · Type‑IV H2 cylinders · Global projects</div>
+        </div>
+        <div class="section__body hero">
+          <p class="summary" data-i18n="summary.body">
+            자동차 배기부품 다수 개발과 Type‑IV 수소용기(저장시스템 포함) 개발 경력을 보유. 현대·기아 및 르노삼성 배기계 프로그램을 설계에서 양산까지 리딩했고, 국내 최초 배기열회수장치(EHRS) Gen1/Gen2를 본사와 협업해 개발. 현대 엑시언트(QZ) 수소 저장시스템을 SOP까지 완료했으며, 현재 MEGC용 XL Type‑4 수소탱크(약 440 L) 개발을 진행 중.
+          </p>
+          <div class="metrics">
+            <div class="metric"><strong data-i18n="summary.m1v">2008 → 현재</strong><span class="muted" data-i18n="summary.m1k">Faurecia Korea</span></div>
+            <div class="metric"><strong data-i18n="summary.m2v">Multi‑OEM</strong><span class="muted" data-i18n="summary.m2k">Hyundai·Kia, Renault Samsung</span></div>
+            <div class="metric"><strong data-i18n="summary.m3v">Hydrogen</strong><span class="muted" data-i18n="summary.m3k">Type‑IV, MEGC XL Tank</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="section__head">
+          <div class="section__title" data-i18n="exp.title">Professional Experience</div>
+          <div class="muted" data-i18n="exp.subtitle">Design → New Tech → Production Engineering</div>
+        </div>
+        <div class="section__body">
+          <div class="timeline">
+            <div class="item">
+              <div class="item__period" data-i18n="exp.p3.period">2021 – Present</div>
+              <div>
+                <div class="item__header">
+                  <div class="company" data-i18n="exp.p3.company">Faurecia Korea (FORVIA)</div>
+                  <div class="role2" data-i18n="exp.p3.role">Process Chief Engineer · Hydrogen BU</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p3.t1">Hydrogen Storage System</span>
+                  <span class="tag" data-i18n="exp.p3.t2">Type‑IV</span>
+                  <span class="tag" data-i18n="exp.p3.t3">MEGC XL Tank</span>
+                  <span class="tag" data-i18n="exp.p3.t4">SOP</span>
+                </div>
+                <ul class="bullets">
+                  <li data-i18n="exp.p3.b1">현대 엑시언트(QZ)용 수소탱크 및 저장시스템 개발을 <strong>SOP</strong> 단계까지 완료.</li>
+                  <li data-i18n="exp.p3.b2">MEGC(Multiple Element Gas Container) 적용 <strong>XL Type‑4 탱크(약 440 L)</strong> 개발 리딩.</li>
+                  <li data-i18n="exp.p3.b3">생산기술 관점에서 품질·공정 안정화, 고객사·본사·공장 간 글로벌 커뮤니케이션 총괄.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__period" data-i18n="exp.p2.period">2014 – 2021</div>
+              <div>
+                <div class="item__header">
+                  <div class="company" data-i18n="exp.p2.company">Faurecia Korea (FORVIA)</div>
+                  <div class="role2" data-i18n="exp.p2.role">New Technology Division · Team Manager</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p2.t1">EHRS</span>
+                  <span class="tag" data-i18n="exp.p2.t2">Gen1</span>
+                  <span class="tag" data-i18n="exp.p2.t3">Gen2</span>
+                  <span class="tag" data-i18n="exp.p2.t4">R&D Collaboration</span>
+                </div>
+                <ul class="bullets">
+                  <li data-i18n="exp.p2.b1">본사와의 협업으로 국내 최초 <strong>배기열회수장치(EHRS) Gen1/Gen2</strong> 개발 및 상용화 주도.</li>
+                  <li data-i18n="exp.p2.b2">차량 연비 향상 및 배출가스 저감 목표 달성을 위한 시스템 최적화, 양산 대응.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__period" data-i18n="exp.p1.period">2008 – 2014</div>
+              <div>
+                <div class="item__header">
+                  <div class="company" data-i18n="exp.p1.company">Faurecia Korea (FORVIA)</div>
+                  <div class="role2" data-i18n="exp.p1.role">Design Engineer → Project Development Leader (PDL)</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p1.t1">Exhaust System</span>
+                  <span class="tag" data-i18n="exp.p1.t2">Mass Production Launch</span>
+                  <span class="tag" data-i18n="exp.p1.t3">Hyundai·Kia</span>
+                  <span class="tag" data-i18n="exp.p1.t4">Renault Samsung</span>
+                </div>
+                <ul class="bullets">
+                  <li data-i18n="exp.p1.b1">현대·기아, 르노삼성 등 <strong>배기계 개발 프로그램</strong>을 설계·검증·양산 Launch까지 성공적으로 리딩.</li>
+                  <li data-i18n="exp.p1.b2">프로젝트 일정·원가·품질 통합 관리 및 Cross‑functional 협업 운영.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- PRE‑FAURECIA POSITIONS -->
+            <div class="item">
+              <div class="item__period" data-i18n="exp.p0b.period">2004.4 – 2008.4</div>
+              <div>
+                <div class="item__header">
+                  <div class="company" data-i18n="exp.p0b.company">JMP (Korea)</div>
+                  <div class="role2" data-i18n="exp.p0b.role">Injection Mold Development · Automotive (HVAC, duct)</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p0b.t1">Injection Mold</span>
+                  <span class="tag" data-i18n="exp.p0b.t2">Automotive Parts</span>
+                  <span class="tag" data-i18n="exp.p0b.t3">HVAC/Duct</span>
+                </div>
+                <ul class="bullets">
+                  <li data-i18n="exp.p0b.b1">자동차 부품 사출금형 개발(HVAC, 덕트) 담당.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__period" data-i18n="exp.p0a.period">2001.9 – 2003.3</div>
+              <div>
+                <div class="item__header">
+                  <div class="company" data-i18n="exp.p0a.company">Lost Wax (Korea)</div>
+                  <div class="role2" data-i18n="exp.p0a.role">Product & Casting Mold Development (turbine, blade)</div>
+                </div>
+                <div class="tags">
+                  <span class="tag" data-i18n="exp.p0a.t1">Investment Casting</span>
+                  <span class="tag" data-i18n="exp.p0a.t2">Turbine/Blade</span>
+                </div>
+                <ul class="bullets">
+                  <li data-i18n="exp.p0a.b1">로스트왁스 공정 기반 주조금형 및 제품 개발(터빈/블레이드).</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="section__head">
+          <div class="section__title" data-i18n="skills.title">Skills</div>
+          <div class="muted" data-i18n="skills.subtitle">Filter by category</div>
+        </div>
+        <div class="section__body">
+          <div class="skillbar" id="skillbar" role="tablist" aria-label="Skill filters">
+            <div class="chip active" data-filter="all" role="tab" aria-selected="true" data-i18n="skills.filter.all">All</div>
+            <div class="chip" data-filter="hydrogen" role="tab" data-i18n="skills.filter.hydrogen">Hydrogen</div>
+            <div class="chip" data-filter="exhaust" role="tab" data-i18n="skills.filter.exhaust">Exhaust</div>
+            <div class="chip" data-filter="project" role="tab" data-i18n="skills.filter.project">Project</div>
+            <div class="chip" data-filter="quality" role="tab" data-i18n="skills.filter.quality">Quality</div>
+          </div>
+          <div class="skillgrid" id="skillgrid">
+            <div class="skill" data-cat="hydrogen"><strong data-i18n="skills.s1.t">Type‑IV Tank Design</strong><div class="muted" data-i18n="skills.s1.d">Liner·wrap, interface, validation</div></div>
+            <div class="skill" data-cat="hydrogen"><strong data-i18n="skills.s2.t">Hydrogen Storage System</strong><div class="muted" data-i18n="skills.s2.d">Balance of plant, safety</div></div>
+            <div class="skill" data-cat="hydrogen"><strong data-i18n="skills.s3.t">MEGC Integration</strong><div class="muted" data-i18n="skills.s3.d">Package, compliance</div></div>
+            <div class="skill" data-cat="exhaust"><strong data-i18n="skills.s4.t">Exhaust Components Development</strong><div class="muted" data-i18n="skills.s4.d">Design→Launch</div></div>
+            <div class="skill" data-cat="project"><strong data-i18n="skills.s5.t">Project Leadership (PDL)</strong><div class="muted" data-i18n="skills.s5.d">Schedule·Cost·Quality</div></div>
+            <div class="skill" data-cat="quality"><strong data-i18n="skills.s6.t">Validation & SOP</strong><div class="muted" data-i18n="skills.s6.d">DV/PV, SOP readiness</div></div>
+            <div class="skill" data-cat="project"><strong data-i18n="skills.s7.t">Supplier/OEM Interface</strong><div class="muted" data-i18n="skills.s7.d">Global communication</div></div>
+            <div class="skill" data-cat="quality"><strong data-i18n="skills.s8.t">Quality Systems</strong><div class="muted" data-i18n="skills.s8.d">APQP/PPAP (project‑level)</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certs">
+        <div class="section__head">
+          <div class="section__title" data-i18n="cert.title">Certifications</div>
+          <div class="muted" data-i18n="cert.subtitle">Core technical qualifications</div>
+        </div>
+        <div class="section__body">
+          <ul class="bullets">
+            <li data-i18n="cert.i1">Precision measurer</li>
+            <li data-i18n="cert.i2">CNC Lathe & Milling</li>
+            <li data-i18n="cert.i3">CAD/CAM</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ACTIVITIES & TRAINING -->
+      <section id="activities">
+        <div class="section__head">
+          <div class="section__title" data-i18n="act.title">Activities & Training</div>
+          <div class="muted" data-i18n="act.subtitle">Manufacturing training and placements</div>
+        </div>
+        <div class="section__body">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="act.th.period">Period</th>
+                <th data-i18n="act.th.category">Category</th>
+                <th data-i18n="act.th.org">Organization</th>
+                <th data-i18n="act.th.activity">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1997.2 – 1999.3</td>
+                <td>Manufacturing training</td>
+                <td>Vocational training center · Korea Chamber of Commerce and Industry</td>
+                <td>CAD/CAM & manufacturing training</td>
+              </tr>
+              <tr>
+                <td>1999.3 – 1999.12</td>
+                <td>Manufacturing training in Japan</td>
+                <td>Korea Chamber of Commerce and Industry</td>
+                <td>Placement at a precision measuring device manufacturer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- MILITARY SERVICE -->
+      <section id="military">
+        <div class="section__head">
+          <div class="section__title" data-i18n="mil.title">Military Service</div>
+          <div class="muted" data-i18n="mil.subtitle">Conscription details</div>
+        </div>
+        <div class="section__body kv">
+          <div class="muted" data-i18n="mil.branch.label">Branch</div>
+          <div data-i18n="mil.branch.value">Army</div>
+          <div class="muted" data-i18n="mil.arm.label">Specialty</div>
+          <div data-i18n="mil.arm.value">Artillery</div>
+          <div class="muted" data-i18n="mil.rank.label">Rank</div>
+          <div data-i18n="mil.rank.value">Sergeant</div>
+          <div class="muted" data-i18n="mil.period.label">Period</div>
+          <div data-i18n="mil.period.value">1994.11 – 1997.1</div>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section id="languages">
+        <div class="section__head">
+          <div class="section__title" data-i18n="lang.title">Languages</div>
+          <div class="muted" data-i18n="lang.subtitle">Multilingual communication</div>
+        </div>
+        <div class="section__body langlist">
+          <div class="lang"><strong data-i18n="lang.en">영어 (English)</strong><span class="muted" data-i18n="lang.en.level">상급 / Fluent</span></div>
+          <div class="lang"><strong data-i18n="lang.ja">일본어 (日本語)</strong><span class="muted" data-i18n="lang.ja.level">상급 / Fluent</span></div>
+          <div class="lang"><strong data-i18n="lang.zh">중국어 (中文)</strong><span class="muted" data-i18n="lang.zh.level">중급 / Intermediate</span></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section__head">
+          <div class="section__title" data-i18n="contact.title">Contact</div>
+          <div class="muted" data-i18n="contact.subtitle">Direct & simple</div>
+        </div>
+        <div class="section__body kv">
+          <div class="muted" data-i18n="contact.email.label">Email</div>
+          <div><a href="mailto:sugoii77@gmail.com" data-i18n="contact.email.value">sugoii77@gmail.com</a></div>
+          <div class="muted" data-i18n="contact.loc.label">Location</div>
+          <div data-i18n="contact.loc.value">Yongin · Ansan, Republic of Korea</div>
+          <div class="muted" data-i18n="contact.port.label">Portfolio</div>
+          <div><a href="https://sugoii77-rgb.github.io/Career-Description/" target="_blank" rel="noopener" data-i18n="contact.port.value">Career‑Description (GitHub Pages)</a></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Oh Young‑Hwan · Built with plain HTML/CSS/JS · Theme & layout by Monday
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    function setTheme(mode){ if(mode === 'light') root.classList.add('light'); else root.classList.remove('light'); localStorage.setItem('theme', mode); }
+    setTheme(localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+    themeToggle.addEventListener('click', e => { e.preventDefault(); const light = root.classList.toggle('light'); localStorage.setItem('theme', light ? 'light' : 'dark'); });
+
+    const progress = document.getElementById('progress');
+    const onScroll = () => { const sc = document.documentElement.scrollTop || document.body.scrollTop; const h = (document.documentElement.scrollHeight - document.documentElement.clientHeight); progress.style.width = (sc / h * 100) + '%'; };
+    document.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    const links = Array.from(document.querySelectorAll('.navlink'));
+    const sections = links.map(a => document.querySelector(a.getAttribute('href')));
+    const obs = new IntersectionObserver(entries => { entries.forEach(entry => { const idx = sections.indexOf(entry.target); if(entry.isIntersecting) { links.forEach(l => l.classList.remove('active')); links[idx].classList.add('active'); } }) }, { rootMargin: '0px 0px -60% 0px', threshold: 0.2 });
+    sections.forEach(s => s && obs.observe(s));
+    links.forEach(a => a.addEventListener('click', e => { e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
+
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const cards = Array.from(document.querySelectorAll('.skill'));
+    chips.forEach(ch => ch.addEventListener('click', () => { chips.forEach(c => c.classList.remove('active')); ch.classList.add('active'); const f = ch.dataset.filter; cards.forEach(cd => { cd.style.display = (f === 'all' || cd.dataset.cat === f) ? '' : 'none'; }) }))
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const i18n = {
+      ko: {
+        'header.name': '오영환 (Oh Young‑Hwan)',
+        'header.role': 'Process Chief Engineer · Hydrogen Storage Systems · Yongin/Ansan, KR',
+        'ui.theme': '🌓 테마', 'ui.pdf': '🖨️ PDF',
+        'nav.summary': '요약', 'nav.experience': '경력', 'nav.skills': '기술', 'nav.certs': '자격증', 'nav.activities': '주요 활동·교육', 'nav.military': '병역', 'nav.languages': '언어', 'nav.contact': '연락처',
+        'summary.title': '프로페셔널 요약', 'summary.tag': '배기부품 · Type‑IV 수소용기 · 글로벌 프로젝트',
+        'summary.body': '자동차 배기부품 다수 개발과 Type‑IV 수소용기(저장시스템 포함) 개발 경력을 보유. 현대·기아 및 르노삼성 배기계 프로그램을 설계에서 양산까지 리딩했고, 국내 최초 배기열회수장치(EHRS) Gen1/Gen2를 본사와 협업해 개발. 현대 엑시언트(QZ) 수소 저장시스템을 SOP까지 완료했으며, 현재 MEGC용 XL Type‑4 수소탱크(약 440 L) 개발을 진행 중.',
+        'summary.m1v': '2008 → 현재', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': '다수 OEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': 'Hydrogen', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
+        'exp.title': '경력', 'exp.subtitle': '설계 → 신기술 → 생산기술',
+        'exp.p3.period': '2021 – 현재', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': 'Process Chief Engineer · Hydrogen BU', 'exp.p3.t1': '수소 저장시스템', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': '현대 엑시언트(QZ)용 수소탱크 및 저장시스템 개발을 <strong>SOP</strong> 단계까지 완료.', 'exp.p3.b2': 'MEGC(Multiple Element Gas Container) 적용 <strong>XL Type‑4 탱크(약 440 L)</strong> 개발 리딩.', 'exp.p3.b3': '생산기술 관점에서 품질·공정 안정화, 고객사·본사·공장 간 글로벌 커뮤니케이션 총괄.',
+        'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': '신기술 사업부 · 팀장', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': 'R&D 협업', 'exp.p2.b1': '본사와의 협업으로 국내 최초 <strong>배기열회수장치(EHRS) Gen1/Gen2</strong> 개발 및 상용화 주도.', 'exp.p2.b2': '연비 향상·배출가스 저감 목표 달성을 위한 시스템 최적화, 양산 대응.',
+        'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': '설계 엔지니어 → PDL', 'exp.p1.t1': '배기계', 'exp.p1.t2': '양산 런치', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': '주요 OEM 배기계 개발 프로그램을 설계·검증·양산 Launch까지 성공적으로 리딩.', 'exp.p1.b2': '프로젝트 일정·원가·품질 통합 관리 및 Cross‑functional 협업 운영.',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': '자동차 사출금형 개발(HVAC, 덕트)', 'exp.p0b.t1': '사출금형', 'exp.p0b.t2': '자동차부품', 'exp.p0b.t3': 'HVAC/덕트', 'exp.p0b.b1': '자동차 부품 사출금형 개발(HVAC, 덕트) 담당.',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': '제품 및 주조금형 개발(터빈/블레이드)', 'exp.p0a.t1': '인베스트먼트 주조', 'exp.p0a.t2': '터빈/블레이드', 'exp.p0a.b1': '로스트왁스 공정 기반 주조금형 및 제품 개발(터빈/블레이드).',
+        'skills.title': '기술', 'skills.subtitle': '카테고리별 필터', 'skills.filter.all': '전체', 'skills.filter.hydrogen': '수소', 'skills.filter.exhaust': '배기', 'skills.filter.project': '프로젝트', 'skills.filter.quality': '품질',
+        'skills.s1.t': 'Type‑IV 탱크 설계', 'skills.s1.d': '라이너·랩, 인터페이스, 검증', 'skills.s2.t': '수소 저장시스템', 'skills.s2.d': 'BOP, 안전', 'skills.s3.t': 'MEGC 통합', 'skills.s3.d': '패키징, 규격준수', 'skills.s4.t': '배기부품 개발', 'skills.s4.d': '설계→양산', 'skills.s5.t': 'PDL 리더십', 'skills.s5.d': '일정·원가·품질', 'skills.s6.t': '검증 & SOP', 'skills.s6.d': 'DV/PV, SOP readiness', 'skills.s7.t': '공급사/OEM 인터페이스', 'skills.s7.d': '글로벌 커뮤니케이션', 'skills.s8.t': '품질 시스템', 'skills.s8.d': 'APQP/PPAP (프로젝트 레벨)',
+        'cert.title': '자격증', 'cert.subtitle': '핵심 기술 자격', 'cert.i1': '정밀측정', 'cert.i2': 'CNC 선반 & 밀링', 'cert.i3': 'CAD/CAM',
+        'act.title': '주요 활동 및 교육', 'act.subtitle': '제조 교육 및 파견', 'act.th.period': '기간', 'act.th.category': '구분', 'act.th.org': '기관', 'act.th.activity': '활동',
+        'mil.title': '병역', 'mil.subtitle': '의무복무 내역', 'mil.branch.label': '군별', 'mil.branch.value': '육군', 'mil.arm.label': '병과', 'mil.arm.value': '포병', 'mil.rank.label': '계급', 'mil.rank.value': '병장', 'mil.period.label': '기간', 'mil.period.value': '1994.11 – 1997.1',
+        'lang.title': '언어', 'lang.subtitle': '다국어 커뮤니케이션', 'lang.en': '영어 (English)', 'lang.en.level': '상급 / Fluent', 'lang.ja': '일본어 (日本語)', 'lang.ja.level': '상급 / Fluent', 'lang.zh': '중국어 (中文)', 'lang.zh.level': '중급 / Intermediate',
+        'contact.title': '연락처', 'contact.subtitle': '간단하고 직접적으로', 'contact.email.label': '이메일', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': '지역', 'contact.loc.value': '용인 · 안산, 대한민국', 'contact.port.label': '포트폴리오', 'contact.port.value': 'Career‑Description (GitHub Pages)'
+      },
+      en: {
+        'header.name': 'Oh Young‑Hwan',
+        'header.role': 'Process Chief Engineer · Hydrogen Storage Systems · Yongin/Ansan, KR',
+        'ui.theme': '🌓 Theme', 'ui.pdf': '🖨️ PDF',
+        'nav.summary': 'Summary', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.certs': 'Certifications', 'nav.activities': 'Activities & Training', 'nav.military': 'Military Service', 'nav.languages': 'Languages', 'nav.contact': 'Contact',
+        'summary.title': 'Professional Summary', 'summary.tag': 'Exhaust components · Type‑IV H2 cylinders · Global projects',
+        'summary.body': 'Experience across multiple automotive exhaust component programs and Type‑IV hydrogen cylinder/storage system development. Led Hyundai·Kia and Renault Samsung exhaust programs from design to mass‑production, co‑developed Korea’s first EHRS Gen1/Gen2 with HQ, and completed the Hyundai Xcient (QZ) hydrogen storage system to SOP. Currently working on the MEGC XL Type‑4 hydrogen tank (~440 L).',
+        'summary.m1v': '2008 → Present', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': 'Multi‑OEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': 'Hydrogen', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
+        'exp.title': 'Professional Experience', 'exp.subtitle': 'Design → New Tech → Production Engineering',
+        'exp.p3.period': '2021 – Present', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': 'Process Chief Engineer · Hydrogen BU', 'exp.p3.t1': 'Hydrogen Storage System', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': 'Completed Hyundai Xcient (QZ) hydrogen tank & storage system to <strong>SOP</strong>.', 'exp.p3.b2': 'Leading MEGC application with <strong>XL Type‑4 tank (~440 L)</strong>.', 'exp.p3.b3': 'Drove process stability and cross‑site communication across customer, HQ and plant.',
+        'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': 'New Technology Division · Team Manager', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': 'R&D Collaboration', 'exp.p2.b1': 'Co‑developed and industrialized Korea’s first <strong>EHRS Gen1/Gen2</strong> with HQ.', 'exp.p2.b2': 'Optimized system for fuel‑economy gains and emission reduction; managed launch readiness.',
+        'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': 'Design Engineer → Project Development Leader (PDL)', 'exp.p1.t1': 'Exhaust System', 'exp.p1.t2': 'Mass Production Launch', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': 'Led exhaust programs from design and validation to mass‑production launch for key OEMs.', 'exp.p1.b2': 'Managed schedule, cost and quality with cross‑functional collaboration.',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': 'Injection Mold Development · Automotive (HVAC, duct)', 'exp.p0b.t1': 'Injection Mold', 'exp.p0b.t2': 'Automotive Parts', 'exp.p0b.t3': 'HVAC/Duct', 'exp.p0b.b1': 'Responsible for injection mold development for automotive HVAC/duct parts.',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': 'Product & Casting Mold Development (turbine, blade)', 'exp.p0a.t1': 'Investment Casting', 'exp.p0a.t2': 'Turbine/Blade', 'exp.p0a.b1': 'Developed casting molds and products for turbine/blade using lost‑wax process.',
+        'skills.title': 'Skills', 'skills.subtitle': 'Filter by category', 'skills.filter.all': 'All', 'skills.filter.hydrogen': 'Hydrogen', 'skills.filter.exhaust': 'Exhaust', 'skills.filter.project': 'Project', 'skills.filter.quality': 'Quality',
+        'skills.s1.t': 'Type‑IV Tank Design', 'skills.s1.d': 'Liner/wrap, interfaces, validation', 'skills.s2.t': 'Hydrogen Storage System', 'skills.s2.d': 'Balance of plant, safety', 'skills.s3.t': 'MEGC Integration', 'skills.s3.d': 'Package, compliance', 'skills.s4.t': 'Exhaust Components Development', 'skills.s4.d': 'Design→Launch', 'skills.s5.t': 'Project Leadership (PDL)', 'skills.s5.d': 'Schedule·Cost·Quality', 'skills.s6.t': 'Validation & SOP', 'skills.s6.d': 'DV/PV, SOP readiness', 'skills.s7.t': 'Supplier/OEM Interface', 'skills.s7.d': 'Global communication', 'skills.s8.t': 'Quality Systems', 'skills.s8.d': 'APQP/PPAP (project‑level)',
+        'cert.title': 'Certifications', 'cert.subtitle': 'Core technical qualifications', 'cert.i1': 'Precision measurer', 'cert.i2': 'CNC Lathe & Milling', 'cert.i3': 'CAD/CAM',
+        'act.title': 'Activities & Training', 'act.subtitle': 'Manufacturing training and placements', 'act.th.period': 'Period', 'act.th.category': 'Category', 'act.th.org': 'Organization', 'act.th.activity': 'Activity',
+        'mil.title': 'Military Service', 'mil.subtitle': 'Conscription details', 'mil.branch.label': 'Branch', 'mil.branch.value': 'Army', 'mil.arm.label': 'Specialty', 'mil.arm.value': 'Artillery', 'mil.rank.label': 'Rank', 'mil.rank.value': 'Sergeant', 'mil.period.label': 'Period', 'mil.period.value': '1994.11 – 1997.1',
+        'lang.title': 'Languages', 'lang.subtitle': 'Multilingual communication', 'lang.en': 'English', 'lang.en.level': 'Fluent', 'lang.ja': 'Japanese', 'lang.ja.level': 'Fluent', 'lang.zh': 'Chinese', 'lang.zh.level': 'Intermediate',
+        'contact.title': 'Contact', 'contact.subtitle': 'Direct & simple', 'contact.email.label': 'Email', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': 'Location', 'contact.loc.value': 'Yongin · Ansan, Republic of Korea', 'contact.port.label': 'Portfolio', 'contact.port.value': 'Career‑Description (GitHub Pages)'
+      },
+      ja: {
+        'header.name': '呉 永煥 (Oh Young‑Hwan)',
+        'header.role': 'プロセス主席エンジニア · 水素貯蔵システム · 龍仁/安山, 韓国',
+        'ui.theme': '🌓 テーマ', 'ui.pdf': '🖨️ PDF',
+        'nav.summary': 'サマリー', 'nav.experience': '職務経歴', 'nav.skills': 'スキル', 'nav.certs': '資格', 'nav.activities': '主な活動・訓練', 'nav.military': '兵役', 'nav.languages': '言語', 'nav.contact': '連絡先',
+        'summary.title': 'プロフェッショナルサマリー', 'summary.tag': '排気部品 · Type‑IV水素ボトル · グローバルPJ',
+        'summary.body': '自動車の排気部品およびType‑IV水素ボトル（貯蔵システム含む）の開発経験を保有。現代・起亜、ルノーサムスン向け排気系を設計から量産まで主導し、本社と協業して韓国内初のEHRS Gen1/Gen2を実用化。現代Xcient(QZ)の水素貯蔵システムをSOPまで完了。現在はMEGC向けXL Type‑4水素タンク（約440 L）を担当。',
+        'summary.m1v': '2008 → 現在', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': 'マルチOEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': '水素', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
+        'exp.title': '職務経歴', 'exp.subtitle': '設計 → 新技術 → 生産技術',
+        'exp.p3.period': '2021 – 現在', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': 'プロセス主席エンジニア · 水素事業部', 'exp.p3.t1': '水素貯蔵システム', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': '現代Xcient(QZ)向け水素タンク及び貯蔵システムを<strong>SOP</strong>まで完了。', 'exp.p3.b2': 'MEGC適用の<strong>XL Type‑4タンク（約440 L）</strong>をリード。', 'exp.p3.b3': '品質・工程安定化と拠点間コミュニケーションを統括。',
+        'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': '新技術事業部 · チーム長', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': 'R&D協業', 'exp.p2.b1': '本社と協業し、韓国内初の<strong>EHRS Gen1/Gen2</strong>を開発・量産化。', 'exp.p2.b2': '燃費向上と排出ガス低減のための最適化、量産対応。',
+        'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': '設計エンジニア → PDL', 'exp.p1.t1': '排気系', 'exp.p1.t2': '量産立上げ', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': '主要OEMの排気系を設計・検証から量産立上げまでリード。', 'exp.p1.b2': 'スケジュール・コスト・品質を統合管理。',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': '自動車用射出金型開発（HVAC/ダクト）', 'exp.p0b.t1': '射出金型', 'exp.p0b.t2': '自動車部品', 'exp.p0b.t3': 'HVAC/ダクト', 'exp.p0b.b1': 'HVAC/ダクト向け射出金型の開発を担当。',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': '製品・鋳造金型開発（タービン/ブレード）', 'exp.p0a.t1': '精密鋳造', 'exp.p0a.t2': 'タービン/ブレード', 'exp.p0a.b1': 'ロストワックス工程による鋳造金型と製品を開発。',
+        'skills.title': 'スキル', 'skills.subtitle': 'カテゴリでフィルタ', 'skills.filter.all': 'すべて', 'skills.filter.hydrogen': '水素', 'skills.filter.exhaust': '排気', 'skills.filter.project': 'プロジェクト', 'skills.filter.quality': '品質',
+        'skills.s1.t': 'Type‑IVタンク設計', 'skills.s1.d': 'ライナー・ラップ、インターフェース、検証', 'skills.s2.t': '水素貯蔵システム', 'skills.s2.d': 'BOP、安全', 'skills.s3.t': 'MEGC統合', 'skills.s3.d': 'パッケージ、法規', 'skills.s4.t': '排気部品開発', 'skills.s4.d': '設計→量産', 'skills.s5.t': 'PDLリーダーシップ', 'skills.s5.d': 'スケジュール・コスト・品質', 'skills.s6.t': '検証 & SOP', 'skills.s6.d': 'DV/PV, SOP readiness', 'skills.s7.t': 'サプライヤ/OEM連携', 'skills.s7.d': 'グローバルコミュニケーション', 'skills.s8.t': '品質システム', 'skills.s8.d': 'APQP/PPAP（プロジェクト）',
+        'cert.title': '資格', 'cert.subtitle': 'コア技術資格', 'cert.i1': '精密測定', 'cert.i2': 'CNC旋盤・フライス', 'cert.i3': 'CAD/CAM',
+        'act.title': '主な活動・訓練', 'act.subtitle': '製造訓練と派遣', 'act.th.period': '期間', 'act.th.category': '区分', 'act.th.org': '機関', 'act.th.activity': '活動',
+        'mil.title': '兵役', 'mil.subtitle': '徴兵詳細', 'mil.branch.label': '軍種', 'mil.branch.value': '陸軍', 'mil.arm.label': '兵科', 'mil.arm.value': '砲兵', 'mil.rank.label': '階級', 'mil.rank.value': '軍曹', 'mil.period.label': '期間', 'mil.period.value': '1994.11 – 1997.1',
+        'lang.title': '言語', 'lang.subtitle': '多言語コミュニケーション', 'lang.en': '英語', 'lang.en.level': '上級 / Fluent', 'lang.ja': '日本語', 'lang.ja.level': '上級 / Fluent', 'lang.zh': '中国語', 'lang.zh.level': '中級 / Intermediate',
+        'contact.title': '連絡先', 'contact.subtitle': 'シンプルに', 'contact.email.label': 'Eメール', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': '所在地', 'contact.loc.value': '龍仁 · 安山, 大韓民国', 'contact.port.label': 'ポートフォリオ', 'contact.port.value': 'Career‑Description (GitHub Pages)'
+      },
+      zh: {
+        'header.name': '吴永煥 (Oh Young‑Hwan)',
+        'header.role': '工艺首席工程师 · 氢储存系统 · 龙仁/安山, 韩国',
+        'ui.theme': '🌓 主题', 'ui.pdf': '🖨️ PDF',
+        'nav.summary': '概要', 'nav.experience': '经历', 'nav.skills': '技能', 'nav.certs': '资格证书', 'nav.activities': '主要活动与培训', 'nav.military': '兵役', 'nav.languages': '语言', 'nav.contact': '联系',
+        'summary.title': '职业概要', 'summary.tag': '排气部件 · Type‑IV 氢瓶 · 全球项目',
+        'summary.body': '拥有多项汽车排气部件及Type‑IV氢瓶（含储存系统）开发经验。主导现代·起亚、雷诺三星排气项目从设计到量产，与总部协作完成韩国首个EHRS Gen1/Gen2。完成现代Xcient(QZ)氢储存系统至SOP阶段。目前负责MEGC用XL Type‑4氢气瓶（约440 L）。',
+        'summary.m1v': '2008 → 至今', 'summary.m1k': 'Faurecia Korea', 'summary.m2v': '多家OEM', 'summary.m2k': 'Hyundai·Kia, Renault Samsung', 'summary.m3v': '氢能', 'summary.m3k': 'Type‑IV, MEGC XL Tank',
+        'exp.title': '工作经历', 'exp.subtitle': '设计 → 新技术 → 生产技术',
+        'exp.p3.period': '2021 – 至今', 'exp.p3.company': 'Faurecia Korea (FORVIA)', 'exp.p3.role': '工艺首席工程师 · 氢能事业部', 'exp.p3.t1': '氢储存系统', 'exp.p3.t2': 'Type‑IV', 'exp.p3.t3': 'MEGC XL Tank', 'exp.p3.t4': 'SOP', 'exp.p3.b1': '完成现代Xcient(QZ)氢气瓶及储存系统至<strong>SOP</strong>。', 'exp.p3.b2': '主导<strong>XL Type‑4（约440 L）</strong>的MEGC应用。', 'exp.p3.b3': '推进工艺稳定，并协调客户/总部/工厂。',
+        'exp.p2.period': '2014 – 2021', 'exp.p2.company': 'Faurecia Korea (FORVIA)', 'exp.p2.role': '新技术事业部 · 组长', 'exp.p2.t1': 'EHRS', 'exp.p2.t2': 'Gen1', 'exp.p2.t3': 'Gen2', 'exp.p2.t4': '研发协作', 'exp.p2.b1': '与总部协作，开发并量产韩国首个<strong>EHRS Gen1/Gen2</strong>。', 'exp.p2.b2': '为提升燃油经济性与降低排放进行优化，并支援量产导入。',
+        'exp.p1.period': '2008 – 2014', 'exp.p1.company': 'Faurecia Korea (FORVIA)', 'exp.p1.role': '设计工程师 → PDL', 'exp.p1.t1': '排气系统', 'exp.p1.t2': '量产导入', 'exp.p1.t3': 'Hyundai·Kia', 'exp.p1.t4': 'Renault Samsung', 'exp.p1.b1': '负责关键OEM排气系统，从设计与验证到量产导入。', 'exp.p1.b2': '统筹进度、成本与质量。',
+        'exp.p0b.period': '2004.4 – 2008.4', 'exp.p0b.company': 'JMP (Korea)', 'exp.p0b.role': '汽车注塑模具开发（HVAC/风道）', 'exp.p0b.t1': '注塑模具', 'exp.p0b.t2': '汽车零部件', 'exp.p0b.t3': 'HVAC/风道', 'exp.p0b.b1': '负责HVAC/风道零部件的注塑模具开发。',
+        'exp.p0a.period': '2001.9 – 2003.3', 'exp.p0a.company': 'Lost Wax (Korea)', 'exp.p0a.role': '产品与铸造模具开发（涡轮/叶片）', 'exp.p0a.t1': '精密铸造', 'exp.p0a.t2': '涡轮/叶片', 'exp.p0a.b1': '基于失蜡工艺开发铸造模具与产品（涡轮/叶片）。',
+        'skills.title': '技能', 'skills.subtitle': '按类别筛选', 'skills.filter.all': '全部', 'skills.filter.hydrogen': '氢能', 'skills.filter.exhaust': '排气', 'skills.filter.project': '项目', 'skills.filter.quality': '质量',
+        'skills.s1.t': 'Type‑IV 氢瓶设计', 'skills.s1.d': '内衬/缠绕、接口、验证', 'skills.s2.t': '氢储存系统', 'skills.s2.d': 'BOP、安全', 'skills.s3.t': 'MEGC 集成', 'skills.s3.d': '布置、合规', 'skills.s4.t': '排气部件开发', 'skills.s4.d': '设计→量产', 'skills.s5.t': '项目领导力 (PDL)', 'skills.s5.d': '进度·成本·质量', 'skills.s6.t': '验证与SOP', 'skills.s6.d': 'DV/PV, SOP就绪', 'skills.s7.t': '供应商/OEM接口', 'skills.s7.d': '全球沟通', 'skills.s8.t': '质量体系', 'skills.s8.d': 'APQP/PPAP（项目级）',
+        'cert.title': '资格证书', 'cert.subtitle': '核心技术资格', 'cert.i1': '精密测量', 'cert.i2': 'CNC 车削与铣削', 'cert.i3': 'CAD/CAM',
+        'act.title': '主要活动与培训', 'act.subtitle': '制造培训与派遣', 'act.th.period': '期间', 'act.th.category': '类别', 'act.th.org': '机构', 'act.th.activity': '内容',
+        'mil.title': '兵役', 'mil.subtitle': '服役详情', 'mil.branch.label': '军别', 'mil.branch.value': '陆军', 'mil.arm.label': '兵种', 'mil.arm.value': '炮兵', 'mil.rank.label': '军衔', 'mil.rank.value': '中士', 'mil.period.label': '期间', 'mil.period.value': '1994.11 – 1997.1',
         'lang.title': '语言', 'lang.subtitle': '多语言沟通', 'lang.en': '英语', 'lang.en.level': '流利', 'lang.ja': '日语', 'lang.ja.level': '流利', 'lang.zh': '中文', 'lang.zh.level': '中级',
         'contact.title': '联系', 'contact.subtitle': '直接而简洁', 'contact.email.label': '邮箱', 'contact.email.value': 'sugoii77@gmail.com', 'contact.loc.label': '位置', 'contact.loc.value': '韩国 龙仁 · 安山', 'contact.port.label': '作品集', 'contact.port.value': 'Career‑Description (GitHub Pages)'
       }
